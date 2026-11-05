@@ -43,6 +43,7 @@ fun FormSiswa(
     var txtNama by rememberSaveable { mutableStateOf("") }
     var txtAlamat by rememberSaveable { mutableStateOf("") }
 
+
     Scaffold(
         modifier = modifier,
         topBar = {
@@ -98,3 +99,11 @@ fun FormSiswa(
                     }
                 }
             }
+            HorizontalDivider(
+                modifier = Modifier
+                    .padding(5.dp)
+                    .width(250.dp),
+                thickness = dimensionResource(R.dimen.thickness_divider),
+                color = Color.Blue,
+            )
+
